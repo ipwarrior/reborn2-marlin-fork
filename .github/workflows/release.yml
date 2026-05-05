@@ -85,7 +85,7 @@ jobs:
         cp .pio/build/$ENV/Robin_nano_6.bin $DIR
 
     - name: Upload Firmwares
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: reborn2-marlin-v${{ env.VERSION_NAME }}
         path: |
